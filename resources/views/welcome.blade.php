@@ -66,6 +66,8 @@
     <body>
         <div>
             <h1>Welcome to my habitissimo project</h1>
+
+            <p>Here we will test all our fullstack development knowledgement</p>
         </div>
     </body>
 </html>
