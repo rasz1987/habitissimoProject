@@ -6,3 +6,25 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    max-width: 42em;
+
+    a.reg-btn{
+        width: 350px;
+        border-radius: 1rem;
+        border-color: #ededed;
+        background-color: #fff;
+        color: #2b2b2b;
+        box-shadow: 1px 3px 3px 0 rgba(0,0,0,.17);
+    }
+}
+
+.text-semibold {
+    font-weight: 600;
+}
+.t-sm {
+    font-size: 18px;
+}
