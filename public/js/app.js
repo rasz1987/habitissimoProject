@@ -68959,7 +68959,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function App() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "row justify-content-center"
@@ -68993,10 +68993,13 @@ if (document.getElementById('app')) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Menu */ "./resources/js/components/Menu.js");
+
 
 
 var Header = function Header() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  var options = ['Reformas', 'Construccion', 'Mudanzas', 'Pintores', 'Albañiles', 'Parquetistas', 'Otros'];
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "navbar navbar-light bg-light justify-content-between"
@@ -69023,10 +69026,51 @@ var Header = function Header() {
   }, "\xBFEres un aut\xF3nomo o tienes una empresa y quieres conseguir m\xE1s clientes?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "btn btn-lg btn-secondary reg-btn",
     href: "#"
-  }, "\xA1Reg\xEDstrate gratis!"))));
+  }, "\xA1Reg\xEDstrate gratis!")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Menu__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    options: options
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/components/Menu.js":
+/*!*****************************************!*\
+  !*** ./resources/js/components/Menu.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var Menu = function Menu(props) {
+  var options = props.options;
+  var list = options.map(function (opt) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      key: opt,
+      className: "nav-item"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      className: "nav-link",
+      href: "#"
+    }, opt));
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "secondary-navbar"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+    className: "navbar navbar-expand-lg navbar-light bg-light"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "navbar-nav justify-content-between"
+  }, list))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Menu);
 
 /***/ }),
 

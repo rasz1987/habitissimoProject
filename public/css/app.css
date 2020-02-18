@@ -10899,6 +10899,14 @@ a.text-dark:focus {
   box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.17);
 }
 
+.navbar-nav {
+  flex: 1;
+}
+
+.secondary-navbar {
+  border-top: 1px solid gray;
+}
+
 .text-semibold {
   font-weight: 600;
 }
